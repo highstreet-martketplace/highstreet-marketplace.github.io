@@ -39,8 +39,8 @@ body {
     padding: 0 20px; /* Adjust as needed */
   }
   
-  @media (max-width: 600px) {
-    .container {
-      flex-direction: column;
+  @media (min-width: 768px) {
+    .mockup {
+      max-width: 50%; /* Adjust as needed */
     }
   }
