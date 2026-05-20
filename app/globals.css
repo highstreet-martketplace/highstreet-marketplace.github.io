@@ -14,6 +14,76 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --logo-font: "Atyp Text Bold", "Atyp Display", "Poppins", "Helvetica Neue", Arial, sans-serif;
+}
+
+.logo-wordmark {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.ambient-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(0, 0, 0, 0.06), transparent 36%),
+    radial-gradient(circle at 86% 84%, rgba(0, 0, 0, 0.08), transparent 33%),
+    linear-gradient(140deg, #f0f0f0 0%, #ffffff 36%, #ececec 100%);
+}
+
+.social-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.25rem;
+  width: 2.25rem;
+  border: 1px solid rgba(212, 212, 212, 1);
+  border-radius: 9999px;
+  color: rgb(23, 23, 23);
+  background: rgba(255, 255, 255, 0.9);
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.social-chip:hover {
+  transform: translateY(-1px);
+  background: rgba(245, 245, 245, 1);
+  border-color: rgba(163, 163, 163, 1);
+}
+
+.success-veil {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+  background:
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.32), transparent 32%),
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.08), transparent 58%);
+}
+
+.success-veil-visible {
+  opacity: 1;
+  animation: successPulse 2.2s ease forwards;
+}
+
+@keyframes successPulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+}
+
 @layer utilities {
   .btn_white { 
     @apply border-white bg-white px-8 py-3 text-green-50;
