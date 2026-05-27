@@ -222,6 +222,17 @@ export default function Home() {
               </svg>
             </Link>
             <Link
+              href="https://www.youtube.com/@highstreet.marketplace"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Highstreet on YouTube"
+              className="social-chip"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current" width="16" height="16">
+                <path d="M23.5 6.2c-.3-1.2-1.3-2.1-2.5-2.4C18.3 3.2 12 3.2 12 3.2s-6.3 0-9 0C1.8 4.1.8 5 .5 6.2 0 8 0 12 0 12s0 4 .5 5.8c.3 1.2 1.3 2.1 2.5 2.4 2.7.6 9 0 9 0s6.3.6 9 0c1.2-.3 2.2-1.2 2.5-2.4C24 16 24 12 24 12s0-4-.5-5.8zM9.8 15.6V8.4l6.3 3.6-6.3 3.6z" />
+              </svg>
+            </Link>
+            <Link
               href="https://www.instagram.com/highstreet.marketplace"
               target="_blank"
               rel="noreferrer"
